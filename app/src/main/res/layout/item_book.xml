@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="6sp"
+    android:gravity="center"
+    android:background="@drawable/bg_radius_blue"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView
+        app:srcCompat="@drawable/icon_book_empty"
+        android:id="@+id/ivBook"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBook"
+        android:textSize="15sp"
+        tools:text="Bàn 1"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

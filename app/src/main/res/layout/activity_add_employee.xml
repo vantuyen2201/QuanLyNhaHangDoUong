@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/ivBack"
+            android:tint="@color/design_default_color_primary"
+            android:layout_width="40dp"
+            android:layout_marginLeft="12dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_height="40dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_centerInParent="true"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:text="@string/add_student"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <ScrollView
+        android:fitsSystemWindows="true"
+        android:fillViewport="true"
+        android:layout_above="@+id/tvAdd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="vertical"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/tilStudentCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tipStudentCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/type_student_code"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilStudentName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tipStudentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/type_student_name"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilStudentPhone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tipStudentPhone"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/type_phone"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilStudentBirthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawablePadding="8dp"
+                    android:cursorVisible="false"
+                    android:id="@+id/tipStudentBirthday"
+                    android:drawableLeft="@drawable/ic_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/type_student_birthday"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_margin="12dp"
+        android:padding="12dp"
+        android:id="@+id/tvAdd"
+        android:gravity="center"
+        android:background="@drawable/bg_radius_blue"
+        android:textColor="@color/design_default_color_primary"
+        android:layout_width="match_parent"
+        android:text="@string/add"
+        android:layout_height="wrap_content"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

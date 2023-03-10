@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_margin="6sp"
+        android:gravity="center"
+        android:background="@drawable/bg_radius_blue"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            app:srcCompat="@drawable/icon_book_empty"
+            android:id="@+id/ivBook"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBook"
+            android:textSize="15sp"
+            tools:text="Bàn 1"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_margin="6sp"
+        android:id="@+id/lnSelect"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/ic_baseline_check_circle_24"
+            android:id="@+id/icCheck"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>
